@@ -11,7 +11,7 @@ from sklearn.preprocessing import *
 
 #Dataset is: https://www.kaggle.com/datasets/hb20007/gender-classification
 
-table = pd.read_csv(r"/kaggle/input/gender-classification/Transformed Data Set - Sheet1.csv")
+table = pd.read_csv(r"dataset.csv") #The path is an example. You can change it!
 
 table["Favorite Color"] =  table["Favorite Color"].map({"Cool":0,"Neutral":1,"Warm":2,})
 table["Favorite Music Genre"] =  table["Favorite Music Genre"].map({"Electronic":0,"Rock":1,"Hip hop":2,"Folk/Traditional":3,"Jazz/Blues":4,"Pop":5,"R&B and soul":6})
